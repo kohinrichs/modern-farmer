@@ -1,17 +1,17 @@
-import { createAsparagus } from './seeds/asparagus.js'
+import {createCorn } from './seeds/corn.js'
 
-const fieldArray = [],
+const fieldArray = [];
 
-const addPlant = (seedObject) => {
-    
-    const newPlant = fieldArray.push(seedObject)
-    return newPlant
+export const addPlant = (seedObject) => {
+    if (Array.isArray(seedObject) === true) {
+        fieldArray.push(seedObject[0])
+        fieldArray.push(seedObject[1])
+    }
+    else {
+     fieldArray.push(seedObject)
+    }
 }
 
 export const usePlants = () => {
     return fieldArray.slice()
 }
-
-let test = addPlant(createAsparagus);
-console.log(test);
-

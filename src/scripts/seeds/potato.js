@@ -1,6 +1,6 @@
 export const createPotato = () => {
     const potatoValues = {
-        type: "potato",
+        type: "Potato",
         height: 32,
         output: 2,
     }

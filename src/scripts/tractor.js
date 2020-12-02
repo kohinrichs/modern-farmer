@@ -8,7 +8,7 @@ import { createSunflower } from './seeds/sunflower.js'
 import { createWheat } from './seeds/wheat.js'
 
 
-const yearlyPlan = createPlan();
+// const yearlyPlan = createPlan();
 
 
 export const plantSeeds = (plantingSchedule) => {
